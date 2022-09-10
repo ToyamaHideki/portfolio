@@ -1,6 +1,8 @@
 
 header{
+    z-index: -1;
     position: relative;
+    
 }
 .header__inner{
     position: relative;
@@ -30,7 +32,7 @@ header{
     background-color: rgb(217, 245, 58);
     border-radius: 10px;
 
-    filter: drop-shadow(0px 10px 7px rgba(0,0,0,.8));
+    filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.8));
 }
 
 .box:after{

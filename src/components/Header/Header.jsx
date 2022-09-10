@@ -10,8 +10,8 @@ const Header = () => {
                     <div className="header__inner_title">
                     <motion.div
                         className="box"
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        initial={{ opacity: 0, scale: [500,0.1] ,duration:4 }}
+                        animate={{ opacity: 1, scale: 1, duration:4 }}
                         transition={{
                             duration: 0.8,
                             delay: 0.5,

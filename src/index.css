@@ -1,4 +1,6 @@
 body {
+  background-color: rgb(245, 195, 30);
+  --red: #ff0055;
   margin: 0;
   width: 100%;
   height: 100vh;
