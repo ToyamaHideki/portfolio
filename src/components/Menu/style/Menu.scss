@@ -7,6 +7,7 @@
     position: fixed;
     top: 20px;
     right: 15px;
+    z-index: 2000;
 
 
     & > span{
@@ -29,7 +30,7 @@
                 transform:translateY(7px) rotate(135deg);
             }
             &:nth-child(2){
-                transform:translateX(-18px) scale(0);
+                transform:translateX(18px) scale(0);
             }
             &:nth-child(3){
                 transform:translateY(-7px) rotate(-135deg);
@@ -41,19 +42,36 @@
 
 
 nav{
-    display: none;
     position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
     top: 20px;
+    z-index: -1;
 }
 
   nav.close{
     display: block;
+    z-index: -1;
 
-    animation: menuCloseAnime ease 1s forwards ;
+    & ul li{
+        &:nth-child(1){
+         animation:  menuCloseAnime ease 1s forwards ;
+        }
+        &:nth-child(2){
+            animation:  menuCloseAnime ease 1s forwards 0.2s;
+        }
+        &:nth-child(3){
+            animation: menuCloseAnime ease 1s forwards 0.4s;
+        }
+        &:nth-child(4){
+            animation:  menuCloseAnime ease 1s forwards 0.6s;
+        }
+    }
   }
   @keyframes menuCloseAnime {
     0%{
-        opacity: 0.7;
+        opacity: 0.6;
        transform: translateX(0px) translateY(0px);
     }
     100%{
@@ -63,13 +81,31 @@ nav{
   }
 
   nav.open{ 
+    z-index: 1000;
     display: block;
-    animation: menuOpenAnime ease 1s ;
+   
+    & ul li{
+        &:nth-child(1){
+         animation: menuOpenAnime 1s ease ;
+        }
+        &:nth-child(2){
+            opacity: 0;
+            animation: menuOpenAnime  1s ease 0.2s forwards;
+        }
+        &:nth-child(3){
+            opacity: 0;
+            animation: menuOpenAnime 1s ease 0.4s forwards;
+        }
+        &:nth-child(4){
+            opacity: 0;
+            animation: menuOpenAnime 1s ease 0.6s forwards;
+        }
+    }
   }
 
   @keyframes menuOpenAnime {
     0%{
-        opacity: 0.2;
+        opacity: 0;
        transform: translateX(-10px)  translateY(-3px);
     }
     100%{

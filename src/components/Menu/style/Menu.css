@@ -5,6 +5,7 @@
   position: fixed;
   top: 20px;
   right: 15px;
+  z-index: 2000;
 }
 .mobile_menu_icon > span {
   background-color: black;
@@ -21,27 +22,45 @@
   transform: translateY(7px) rotate(135deg);
 }
 .mobile_menu_icon.open > span:nth-child(2) {
-  transform: translateX(-18px) scale(0);
+  transform: translateX(18px) scale(0);
 }
 .mobile_menu_icon.open > span:nth-child(3) {
   transform: translateY(-7px) rotate(-135deg);
 }
 
 nav {
-  display: none;
   position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: none;
   top: 20px;
+  z-index: -1;
 }
 
 nav.close {
   display: block;
+  z-index: -1;
+}
+nav.close ul li:nth-child(1) {
   -webkit-animation: menuCloseAnime ease 1s forwards;
           animation: menuCloseAnime ease 1s forwards;
+}
+nav.close ul li:nth-child(2) {
+  -webkit-animation: menuCloseAnime ease 1s forwards 0.2s;
+          animation: menuCloseAnime ease 1s forwards 0.2s;
+}
+nav.close ul li:nth-child(3) {
+  -webkit-animation: menuCloseAnime ease 1s forwards 0.4s;
+          animation: menuCloseAnime ease 1s forwards 0.4s;
+}
+nav.close ul li:nth-child(4) {
+  -webkit-animation: menuCloseAnime ease 1s forwards 0.6s;
+          animation: menuCloseAnime ease 1s forwards 0.6s;
 }
 
 @-webkit-keyframes menuCloseAnime {
   0% {
-    opacity: 0.7;
+    opacity: 0.6;
     transform: translateX(0px) translateY(0px);
   }
   100% {
@@ -52,7 +71,7 @@ nav.close {
 
 @keyframes menuCloseAnime {
   0% {
-    opacity: 0.7;
+    opacity: 0.6;
     transform: translateX(0px) translateY(0px);
   }
   100% {
@@ -61,14 +80,32 @@ nav.close {
   }
 }
 nav.open {
+  z-index: 1000;
   display: block;
-  -webkit-animation: menuOpenAnime ease 1s;
-          animation: menuOpenAnime ease 1s;
+}
+nav.open ul li:nth-child(1) {
+  -webkit-animation: menuOpenAnime 1s ease;
+          animation: menuOpenAnime 1s ease;
+}
+nav.open ul li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: menuOpenAnime 1s ease 0.2s forwards;
+          animation: menuOpenAnime 1s ease 0.2s forwards;
+}
+nav.open ul li:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: menuOpenAnime 1s ease 0.4s forwards;
+          animation: menuOpenAnime 1s ease 0.4s forwards;
+}
+nav.open ul li:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: menuOpenAnime 1s ease 0.6s;
+          animation: menuOpenAnime 1s ease 0.6s;
 }
 
 @-webkit-keyframes menuOpenAnime {
   0% {
-    opacity: 0.2;
+    opacity: 0;
     transform: translateX(-10px) translateY(-3px);
   }
   100% {
@@ -79,11 +116,12 @@ nav.open {
 
 @keyframes menuOpenAnime {
   0% {
-    opacity: 0.2;
+    opacity: 0;
     transform: translateX(-10px) translateY(-3px);
   }
   100% {
     opacity: 1;
     transform: translateX(0px) translateY(0px);
   }
-}/*# sourceMappingURL=Menu.css.map */
+}
+/*# sourceMappingURL=Menu.css.map */
