@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style/Profile.scss";
-import { profile } from "../../utils/profile.js";
+import { profile } from "../../utils/Dates.js";
 
 import { IconContext } from "react-icons";
 import { GrTwitter } from "react-icons/gr";
@@ -23,13 +23,13 @@ const Profile = () => {
               {/* 後日画像を組み込む */}
             </div>
 
-            <div className='profile__inner_social'>
+            {/* <div className='profile__inner_social'>
               <IconContext.Provider value={{ size: "40", className: "social_icons" }}>
                 <a href={url.twitter} target="_blank"><GrTwitter /></a>
                 <a href={url.github} target="_blank"><VscGithub /></a>
                 <a href={url.instagram} target="_blank"><BsInstagram /></a>
               </IconContext.Provider>
-            </div>
+            </div> */}
 
             <div className='profile__inner_name'>
               <p>{profile.name} <br />
@@ -41,8 +41,8 @@ const Profile = () => {
           <div className='profile__inner_hobby'>
             <h3>趣味</h3>
             <ul>
-              {profile.hobby.map((item) => (
-                <li>{item}</li>
+              {profile.hobby.map((item , i) => (
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>

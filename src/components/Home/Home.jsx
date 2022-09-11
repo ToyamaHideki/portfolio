@@ -19,8 +19,8 @@ const Home = () => {
         style={{ scaleX: scaleX }}
       />
       <Header />
+      <Profile/>
         {/* 
-        <Profile/>
         <Career/>
         <Learning/> */}
    </>

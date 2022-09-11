@@ -1,7 +1,13 @@
+
+
+/****************************************************
+ *                 PROFILE.JSX                      *
+ ****************************************************/
+
 export const profile = {
     imgPath: "",
     name: "外山　秀樹",
-    birth: "1994年10月4日",
+    birth: "1994/10/4",
     age: "28",
     from: "愛知県名古屋市在住",
     hobby: [
@@ -18,3 +24,15 @@ export const profile = {
     }
 }
 
+
+
+/****************************************************
+ *                 HEADER.JSX                      *
+ ****************************************************/
+
+export const header ={
+    imgPath:{
+        rightBottom:"../../images/searching_man.webp",
+        freme:"../images/header_title.webp",
+    }
+}
