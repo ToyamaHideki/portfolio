@@ -1,21 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./style/Menu.scss";
 
 const Menu = () => {
 
-  const [menuState, setMenuState] = useState(false);
+  const [menuState, setMenuState] = useState(null);
+
+  useEffect(()=>{console.log(menuState)},[])
 
 
   return (
     <>
 
-    <button className={`mobile_menu_icon ${menuState ? "open":"false"}`} onClick={() => {setMenuState(!menuState); console.log(menuState)}}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <button className={`mobile_menu_icon ${menuState ? "open" : "false"}`} 
+              onClick={() =>{setMenuState(!menuState); console.log(menuState)}}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <nav className={menuState ? "open" : "close"}>
+{/* 初回ローディング時にはアニメーションを発生させない */}
+      <nav className={menuState == null ? "" : menuState ? "open" : "close"}>
         <ul>
           <li>menu</li>
           <li>menu</li>

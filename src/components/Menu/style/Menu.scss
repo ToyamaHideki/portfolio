@@ -4,9 +4,10 @@
     background-color: transparent;
     border: none; 
     outline: none; 
+    position: fixed;
+    top: 20px;
+    right: 15px;
 
-
-   margin-top: 30px;
 
     & > span{
         background-color: black;
@@ -39,22 +40,40 @@
 }
 
 
-
-
-// TODO クローズ時のアニメーション
-  nav.close{
+nav{
     display: none;
+    position: fixed;
+    top: 20px;
+}
+
+  nav.close{
+    display: block;
+
+    animation: menuCloseAnime ease 1s forwards ;
+  }
+  @keyframes menuCloseAnime {
+    0%{
+        opacity: 0.7;
+       transform: translateX(0px) translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-10px) translateY(-3px);
+    }
   }
 
   nav.open{ 
-    animation: menuOpenAnime ease 4s ;
+    display: block;
+    animation: menuOpenAnime ease 1s ;
   }
 
   @keyframes menuOpenAnime {
-    from{
-        opacity: 0;
+    0%{
+        opacity: 0.2;
+       transform: translateX(-10px)  translateY(-3px);
     }
-    to{
-        opacity:1;
+    100%{
+        opacity: 1;
+        transform: translateX(0px) translateY(0px);
     }
   }

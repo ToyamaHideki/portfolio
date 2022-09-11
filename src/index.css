@@ -1,6 +1,7 @@
 body {
   --red: #ff0055;
   background-color: rgb(253, 253, 253);
+  position: relative;
   margin: 0;
   width: 100%;
   height: auto;
