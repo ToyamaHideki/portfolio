@@ -1,0 +1,60 @@
+
+
+.mobile_menu_icon{
+    background-color: transparent;
+    border: none; 
+    outline: none; 
+
+
+   margin-top: 30px;
+
+    & > span{
+        background-color: black;
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 5px;
+        transition: transform ease 1s;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &.open{
+
+        & > span {
+            &:nth-child(1){
+                transform:translateY(7px) rotate(135deg);
+            }
+            &:nth-child(2){
+                transform:translateX(-18px) scale(0);
+            }
+            &:nth-child(3){
+                transform:translateY(-7px) rotate(-135deg);
+            }
+        }
+    }
+
+}
+
+
+
+
+// TODO クローズ時のアニメーション
+  nav.close{
+    display: none;
+  }
+
+  nav.open{ 
+    animation: menuOpenAnime ease 4s ;
+  }
+
+  @keyframes menuOpenAnime {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+  }

@@ -1,1 +1,53 @@
-/*# sourceMappingURL=Menu.css.map */
+.mobile_menu_icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+}
+.mobile_menu_icon > span {
+  background-color: black;
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 5px;
+  transition: transform ease 1s;
+}
+.mobile_menu_icon > span:last-child {
+  margin-bottom: 0;
+}
+.mobile_menu_icon.open > span:nth-child(1) {
+  transform: translateY(7px) rotate(135deg);
+}
+.mobile_menu_icon.open > span:nth-child(2) {
+  transform: translateX(-18px) scale(0);
+}
+.mobile_menu_icon.open > span:nth-child(3) {
+  transform: translateY(-7px) rotate(-135deg);
+}
+
+nav.close {
+  display: none;
+}
+
+nav.open {
+  -webkit-animation: menuOpenAnime ease 4s;
+          animation: menuOpenAnime ease 4s;
+}
+
+@-webkit-keyframes menuOpenAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menuOpenAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Menu.css.map */
