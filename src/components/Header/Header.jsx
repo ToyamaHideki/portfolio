@@ -1,25 +1,23 @@
 import React from 'react';
 import "./style/Header.scss";
 import { motion } from "framer-motion";
+import fixedImg from "../../images/searching_man.webp";
 
 const Header = () => {
     return (
         <>
             <header>
-                <div className="header__inner">
-                    <div className="header__inner_title">
-                    <motion.div
-                        className="box"
-                        initial={{ opacity: 0, scale: [500,0.1] ,duration:4 }}
-                        animate={{ opacity: 1, scale: 1, duration:4 }}
-                        transition={{
-                            duration: 0.8,
-                            delay: 0.5,
-                            ease: [0, 0.71, 0.2, 1.01]
-                        }} />
+                <div className="header__container">
+                    <div className="header__inner">
+
+                        <div className="header__inner_img">
+                            <img src={fixedImg} alt="" />
+                        </div>
+
+                        <div className="header__inner_title">
+                        </div>
                     </div>
                 </div>
-
             </header>
         </>
     )

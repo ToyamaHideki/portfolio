@@ -1,9 +1,15 @@
 import React from 'react'
+import "./style/Menu.scss";
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <>
+      <nav>
+       
+      </nav>
+
+    </>
   )
 }
 
-export default Menu
+export default Menu;

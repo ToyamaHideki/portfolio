@@ -18,10 +18,10 @@ const Home = () => {
         className="progress-bar"
         style={{ scaleX: scaleX }}
       />
-        <Header />
+        {/* <Header />
         <Profile/>
         <Career/>
-        <Learning/>
+        <Learning/> */}
    </>
   )
 }
