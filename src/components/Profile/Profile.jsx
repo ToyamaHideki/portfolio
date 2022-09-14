@@ -20,13 +20,21 @@ const Profile = () => {
               {/* 後日画像を組み込む */}
             </div>
 
-          
-
             <div className='profile__inner_name'>
               <p>{profile.name} <br />
                 {`${profile.birth}(${profile.age}歳)`}<br />
                 {profile.from}</p>
             </div>
+          </div>
+
+          <div className="profile__inner_quallity">
+            <h3>保有資格</h3>
+            <ul>
+              {profile.quality.map((item,i) => (
+                <li key={i}>{item}</li>
+              ))}
+
+            </ul>
           </div>
 
           <div className='profile__inner_hobby'>

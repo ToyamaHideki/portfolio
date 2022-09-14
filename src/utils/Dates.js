@@ -10,6 +10,7 @@ export const profile = {
     birth: "1994/10/4",
     age: "28",
     from: "愛知県名古屋市在住",
+    quality:["Webクリエイターエキスパート","ITパスポート","Java SE11 Silver","HTML5 Level1"],
     hobby: [
         "サウナ、　天然温泉巡り",
         "写真撮影 ( Sony a7III ) ",
