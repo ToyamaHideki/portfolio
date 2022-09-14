@@ -1,8 +1,12 @@
 import React from 'react';
 import "./style/Language.scss";
-import JSimg from "../../images/langImg/js.png";
+import js from "../../images/langImg/js.png";
+import html from "../../images/langImg/html.png";
+import css from  "../../images/langImg/css.png";
+
 
 const Language = () => {
+  const imgPath = "../../images/langImg/";
   return (
     <section>
     <div className='language__container'>
@@ -10,85 +14,41 @@ const Language = () => {
 
         <div className="language__inner_card">
           <div className="language__inner_image">
-            <img src={JSimg} alt="" />
+            {/* <img src={html} alt="" /> */}
           </div>
           <div className="language__text">
-          <p>JavaScript</p>
+          <p>HTML</p>
           </div>
         </div>
 
         <div className="language__inner_card">
           <div className="language__inner_image">
-            <img src={JSimg} alt="" />
+            <img src={css} alt="" />
           </div>
           <div className="language__text">
-          <p>JavaScript</p>
+          <p>CSS</p>
           </div>
         </div>
 
         <div className="language__inner_card">
           <div className="language__inner_image">
-            <img src={JSimg} alt="" />
+            <img src={js} alt="" />
           </div>
           <div className="language__text">
-              <p>JavaScript</p>
-          </div>
-        </div>
-        
-        <div className="language__inner_card">
-          <div className="language__inner_image">
-            <img src={JSimg} alt="" />
-          </div>
-          <div className="language__text">
-          <p>JavaScript</p>
+          <p>JS</p>
           </div>
         </div>
 
         <div className="language__inner_card">
           <div className="language__inner_image">
-            <img src={JSimg} alt="" />
+            <img src={css} alt="" />
           </div>
           <div className="language__text">
-          <p>JavaScript</p>
+          <p>JS</p>
           </div>
         </div>
 
-        <div className="language__inner_card">
-          <div className="language__inner_image">
-            <img src={JSimg} alt="" />
-          </div>
-          <div className="language__text">
-              <p>JavaScript</p>
-          </div>
-        </div>
-        
-        <div className="language__inner_card">
-          <div className="language__inner_image">
-            <img src={JSimg} alt="" />
-          </div>
-          <div className="language__text">
-          <p>JavaScript</p>
-          </div>
-        </div>
 
-        <div className="language__inner_card">
-          <div className="language__inner_image">
-            <img src={JSimg} alt="" />
-          </div>
-          <div className="language__text">
-          <p>JavaScript</p>
-          </div>
-        </div>
-
-        <div className="language__inner_card">
-          <div className="language__inner_image">
-            <img src={JSimg} alt="" />
-          </div>
-          <div className="language__text">
-              <p>JavaScript</p>
-          </div>
-        </div>
-        
       </div>
     </div>
     </section>

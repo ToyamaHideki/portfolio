@@ -21,9 +21,9 @@ const Profile = () => {
             </div>
 
             <div className='profile__inner_name'>
-              <p>{profile.name} <br />
-                {`${profile.birth}(${profile.age}歳)`}<br />
-                {profile.from}</p>
+              <p>{profile.name} </p>
+               <p> {`${profile.birth}(${profile.age}歳)`}</p>
+                <p>{profile.from}</p>
             </div>
           </div>
 

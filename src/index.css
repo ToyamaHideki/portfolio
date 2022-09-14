@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Noto+Sans+JP:wght@500&display=swap');
 body {
-  font-family: 'IM Fell English','Noto Sans JP', sans-serif, serif;
   --red: #ff0055;
   background-color: rgb(152, 152, 152);
   position: relative;
