@@ -35,19 +35,6 @@
         background-color: gray;
     }
 
-    &_social {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        & a:visited {
-            color: black;
-        }
-        & .social_icons {
-           margin-top:15px ;
-           margin-bottom: 15px;
-        }
-    }
-
     &_name {
         display: flex;
         align-items: center;

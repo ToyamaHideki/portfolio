@@ -30,18 +30,6 @@
   border-radius: 50%;
   background-color: gray;
 }
-.profile__inner_social {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.profile__inner_social a:visited {
-  color: black;
-}
-.profile__inner_social .social_icons {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 .profile__inner_name {
   display: flex;
   align-items: center;

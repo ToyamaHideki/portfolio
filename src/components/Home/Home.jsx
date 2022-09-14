@@ -13,18 +13,19 @@ const Home = () => {
   const scaleX = useSpring(scrollYProgress)
 
   return (
-   <>
-         <motion.div
+    <>
+    
+      <motion.div
         className="progress-bar"
         style={{ scaleX: scaleX }}
       />
+
       <Header />
-      <Profile/>
-    <Language/> 
-        {/* 
-        <Career/>
-    */}
-   </>
+      <Profile />
+      <Career />
+      <Language />
+
+    </>
   )
 }
 

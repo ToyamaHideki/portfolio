@@ -1,14 +1,33 @@
 .header__container {
   width: 100%;
   height: 100vh;
+  margin-bottom: 200px;
+  animation: shdowAnime ease-in 2s reverse forwards;
 }
 
+@-webkit-keyframes shdowAnime {
+  from {
+    box-shadow: inset 0px 0px 0px 0px;
+  }
+  to {
+    box-shadow: inset 0px 0px 10px 20px;
+  }
+}
+
+@keyframes shdowAnime {
+  from {
+    box-shadow: inset 0px 0px 0px 0px;
+  }
+  to {
+    box-shadow: inset 0px 0px 10px 20px;
+  }
+}
 .header__inner {
   position: relative;
   width: 100%;
   height: 100vh;
-  -webkit-animation: headerAnime 4s ease forwards;
-          animation: headerAnime 4s ease forwards;
+  -webkit-animation: headerAnime 4s ease alternate;
+          animation: headerAnime 4s ease alternate;
 }
 .header__inner_rbImg {
   position: absolute;

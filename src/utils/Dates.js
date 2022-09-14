@@ -17,11 +17,14 @@ export const profile = {
         "ゲーム(スマブラSP、APEX)",
         "登山、キャンプ"
     ],
-    URL: {
-        github: "https://github.com/ToyamaHideki",
-        twitter: "https://twitter.com/JS_TenshiDay",
-        instagram: "https://www.instagram.com/toyama_hideki_/"
-    }
+    
+}
+
+export const link = {
+    github: "https://github.com/ToyamaHideki",
+    twitter: "https://twitter.com/JS_TenshiDay",
+    instagram: "https://www.instagram.com/toyama_hideki_/",
+    youtube: "https://www.youtube.com/watch?v=-vSTe9Hf0MY",
 }
 
 
